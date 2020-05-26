@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Horizontal Menu</title>
+
+    <meta charset="utf-8" />
+
+    <style>
+        body {
+            position: relative;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: red;
+        }
+
+        .demo {
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .triangle {
+            overflow: hidden;
+        }
+
+        .triangle::after {
+            position:absolute;
+            left: 50%;
+            margin-left: -20px;
+            content: "";
+            display: inline;
+            border-width: 20px;
+            border-style: solid;
+            border-color: red transparent transparent transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#home" class="active">Item 1</a></li>
+        <li><a href="#news">Item 2</a></li>
+        <li><a href="#contact">Item 3</a></li>
+        <li><a href="#about">Item 4</a></li>
+    </ul>
+    <div class="triangle">
+        <p>Voluptate laborum sint velit velit dolore aute amet incididunt est commodo veniam fugiat enim dolor. Amet
+            laboris
+            do proident eu officia cupidatat eiusmod aliqua sunt ipsum. Et Lorem ullamco velit id magna labore
+            exercitation
+            reprehenderit elit labore. <span class="demo">Duis nostrud officia officia</span> ullamco tempor occaecat
+            aliquip
+            cillum culpa fugiat
+            reprehenderit. Proident mollit sint cillum aliquip deserunt nisi tempor enim consequat laboris non sunt
+            cupidatat
+            incididunt. Incididunt cillum incididunt non deserunt laboris aute laboris mollit reprehenderit quis. Nulla
+            quis
+            ex
+            qui velit duis qui cupidatat.</p>
+    </div>
+
+</body>
+
+</html>
